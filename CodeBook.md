@@ -133,10 +133,9 @@ text.  For example, "tBodyAcc-std()-X" is updated to become "Time Body Accelerat
 
 ###Summary / Aggregation of Data
 
-For each of the 86 mean and standard deviation variables, the R script calculates the average for each combination of subject and activity using the aggregate function.  
+For each of the 86 mean and standard deviation variables, the R script calculates the average for each combination of subject and activity (Subject 1 Laying, Subject 1 Sitting, etc.) using the aggregate function.  
 
-The final tidy data set includes one row for each combination of subject and activity.  The average of each variable for the 
-corresponding combination of subject and activity is represented in its own column.
+The final tidy data set includes one row for each combination of subject and activity.  The data include 30 subjects with 6 activities per subject, for a total of 180 rows.  The average of each of the 86 mean and standard deviation variables for the corresponding combination of subject and activity is represented in its own column.
 
 The R script uses write.table to export the tidy data set to mean_std_summary.txt.  Once saved to your working directory, this
 file may be imported into R using the following code:
