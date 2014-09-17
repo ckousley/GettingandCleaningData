@@ -28,7 +28,7 @@ Next, the script completes the steps identified in the course assignment:
 * Step 1 - Merges the test and training data (using rbind).
 * Step 2 - Extracts only the mean and standard deviation for each measurement (using grep).  The regular expression includes variables with "Mean", "mean", or "std" included anywhere in the variable name.  This results in 86 variables.
 * Step 3 - Replaces activity numbers with descriptive activity names (using lookup from the qdap package).
-* Step 4 - Appropriately labels the data set with descriptive variable names (using gsub).  This step searches for and substitutes technical names and abbreviations with more human-readable text.  For example, "tBodyAcc-std()-X" is updated to become "Time Body Acceleration Standard Deviation X Axis".
+* Step 4 - Appropriately labels the data set with descriptive variable names (using gsub).  This step searches for and substitutes technical names and abbreviations with more descriptive text.  For example, "tBodyAcc-std()-X" is updated to become "Time Body Acceleration Standard Deviation X Axis".
 * Step 5 - Creates a tidy data set with the average of each variable for each combination of subject and activity (using aggregate).  The resulting data set reflects a "wide" format for tidy data, as outlined on the course discussion forum: 
 https://class.coursera.org/getdata-007/forum/thread?thread_id=214#comment-672.  It adheres to tidy data principles, where each variable forms its own column and each combination of subject and activity forms its own row.
 
